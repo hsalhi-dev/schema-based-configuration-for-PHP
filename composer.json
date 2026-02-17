@@ -1,0 +1,10 @@
+{
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^4.0",
+        "phpstan/phpstan": "^2.1"
+    },
+    "require": {
+        "dflydev/dot-access-data": "^3.0",
+        "nette/schema": "^1.3"
+    }
+}

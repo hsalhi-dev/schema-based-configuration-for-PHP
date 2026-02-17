@@ -18,7 +18,8 @@ use Nette\Schema\Schema;
 /**
  * Interface that allows new schemas to be added to a configuration
  */
-interface SchemaBuilderInterface {
+interface SchemaBuilderInterface
+{
     /**
      * Registers a new configuration schema at the given top-level key
      */

@@ -19,7 +19,8 @@ use League\Config\Exception\ValidationException;
 /**
  * Interface for reading configuration values
  */
-interface ConfigurationInterface {
+interface ConfigurationInterface
+{
     /**
      * @param string $key Configuration option path/key
      *

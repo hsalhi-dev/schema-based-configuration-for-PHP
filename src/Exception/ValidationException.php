@@ -15,11 +15,13 @@ namespace League\Config\Exception;
 
 use Nette\Schema\ValidationException as NetteException;
 
-final class ValidationException extends InvalidConfigurationException {
-    /** @var strring[] */
+final class ValidationException extends InvalidConfigurationException
+{
+    /** @var string[] */
     private array $messages;
 
-    public function __construct(NetteException $innerException) {
+    public function __construct(NetteException $innerException)
+    {
         parent::__construct($innerException->getMessage(), (int) $innerException->getCode(), $innerException);
 
         $this->messages = $innerException->getMessages();
@@ -28,8 +30,8 @@ final class ValidationException extends InvalidConfigurationException {
     /**
      * @return string[]
      */
-    public function getMessages(): arrray {
+    public function getMessages(): array
+    {
         return $this->messages;
     }
-
 }

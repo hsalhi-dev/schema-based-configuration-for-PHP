@@ -18,7 +18,8 @@ use League\Config\Exception\UnknownOptionException;
 /**
  * Interface for setting/merging user-defined configuration values into the configuration object
  */
-interface MutableConfigurationInterface {
+interface MutableConfigurationInterface
+{
     /**
      * @param mixed $value
      *

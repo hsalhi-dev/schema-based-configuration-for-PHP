@@ -16,6 +16,7 @@ namespace League\Config;
 /**
  * Implement this class to facilitate setter injection of the configuration when needed
  */
-interface ConfigurationAwareInterface {
+interface ConfigurationAwareInterface
+{
     public function setConfiguration(ConfigurationInterface $configuration): void;
 }
